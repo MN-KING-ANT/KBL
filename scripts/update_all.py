@@ -17,7 +17,7 @@ def main():
 
     print("\n=== WKBL 데이터 업데이트 시작 ===")
     try:
-        update_wkbl_data(str(ROOT / "data/wkbl_games.csv"))
+        update_wkbl_data(str(ROOT / "data/wkbl_games.csv"), str(ROOT / "data/wkbl_schedule.csv"))
     except Exception as e:
         print(f"[ERROR] WKBL 업데이트 실패: {e}")
 
