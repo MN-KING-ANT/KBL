@@ -12,7 +12,7 @@ def simulate_matchup(
 ) -> dict:
     h = ratings.loc[ratings["team"] == home_team].iloc[0]
     a = ratings.loc[ratings["team"] == away_team].iloc[0]
-    hca = 2.5 if league == "KBL" else 2.0
+    hca = 2.5 if league == "KBL" else 0.0
 
     rng = np.random.default_rng(42)
 
